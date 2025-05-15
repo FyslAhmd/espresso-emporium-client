@@ -15,7 +15,7 @@ const Register = () => {
       .then((res) => {
         console.log(res.user);
         //send rest into to db
-        fetch("http://localhost:5000/users", {
+        fetch("https://coffee-store-server-roan-seven.vercel.app/users", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(userProfile),
